@@ -1,0 +1,29 @@
+{
+  "name": "task-manager",
+  "version": "1.0.0",
+  "private": true,
+  "description": "智能任务管理系统：Node.js + Express + Supabase + React",
+  "scripts": {
+    "dev": "concurrently -n server,web -c cyan,green \"node server/index.js\" \"vite\"",
+    "dev:server": "node server/index.js",
+    "build": "vite build",
+    "start": "node server/index.js",
+    "test": "node test/e2e.test.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.3",
+    "concurrently": "^9.1.0",
+    "vite": "^5.4.10"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
