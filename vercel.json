@@ -1,9 +1,4 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": "client/dist",
-  "functions": {
-    "api/[...path].js": {
-      "maxDuration": 10
-    }
-  }
+  "outputDirectory": "client/dist"
 }
